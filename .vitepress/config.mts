@@ -15,10 +15,6 @@ const vitePressOptions = {
       provider: 'local'
     },
 
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Link list', link: '/list' }
-    ],
 
     editLink: {
       pattern: 'https://github.com/dot-1245/dot1245-docs/edit/main/:path',
