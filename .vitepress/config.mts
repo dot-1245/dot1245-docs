@@ -18,7 +18,7 @@ const vitePressOptions = {
 
     // 編集リンクの設定（リポジトリ名は自分のものに書き換えてください！）
     editLink: {
-      pattern: 'https://github.com/dot1245/dot1245-docs/edit/main/:path',
+      pattern: 'https://github.com/dot-1245/dot1245-docs/edit/main/:path',
       text: 'GitHubでこのページを編集する'
     },
 
