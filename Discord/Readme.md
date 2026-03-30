@@ -18,12 +18,15 @@
 
 ## Third: 運営者について
 dot1245です。学生です。
-ホームページ: https://dot1245.net/
+[ホームページ](https://dot1245.net/)
+メールアドレス dot1245@proton.me
 
 ## Four: このドキュメントについて
 このドキュメントはVitepressを使用しています。
 Vitepress https://vitepress.dev/
+
 バックエンドにCloudflare Pagesを使用しています。
 https://www.cloudflare.com/
+
 バージョン管理にGithubを使用しています。
 https://github.com/
