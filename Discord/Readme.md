@@ -23,16 +23,19 @@ dot1245です。学生です。
 
 ## Fourth: このドキュメントについて
 このドキュメントはVitepressを使用しています。
+
 Vitepress https://vitepress.dev/
 
 バックエンドにCloudflare Pagesを使用しています。
-https://www.cloudflare.com/
+
+Cloudflare https://www.cloudflare.com/
 
 バージョン管理にGithubを使用しています。
-https://github.com/
+
+Github https://github.com/
 
 その他開発にClaudeとGoogle Geminiを使用しています
 
-https://claude.ai/
+Claude https://claude.ai/
 
-https://gemini.google.com/
+Gemini https://gemini.google.com/
