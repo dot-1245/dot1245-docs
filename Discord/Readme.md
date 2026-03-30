@@ -21,7 +21,7 @@ dot1245です。学生です。
 [ホームページ](https://dot1245.net/)
 メールアドレス dot1245@proton.me
 
-## Four: このドキュメントについて
+## Fourth: このドキュメントについて
 このドキュメントはVitepressを使用しています。
 Vitepress https://vitepress.dev/
 
@@ -30,3 +30,7 @@ https://www.cloudflare.com/
 
 バージョン管理にGithubを使用しています。
 https://github.com/
+
+その他開発にClaudeとGoogle Geminiを使用しています
+https://claude.ai/
+https://gemini.google.com/
