@@ -1,2 +1,3 @@
 # Minecraft: Rule(WIP)
-誠意制作中
+# 0.はじめに
+基本的なルールは[Discordのルール](../Discord/Rules) と同じですのでそちらを参考のこと。
