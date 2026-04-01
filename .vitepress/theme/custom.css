@@ -1,22 +1,49 @@
 :root {
-  /* メイン：指定の山吹色 */
-  --vp-c-brand-1: #F5E105;
-  /* ホバー時：あえて少しだけ「オレンジ」に寄せて落ち着かせる */
-  --vp-c-brand-2: #e5cc05; 
-  /* 境界線やアクセント：ここが明るすぎたので、少しトーンを落とす */
-  --vp-c-brand-3: #d4c104; 
+  /* --- ライトモード：テキスト色を深い黒に --- */
+  --vp-c-text-1: #1a1a1a; 
+  --vp-c-text-2: #454545;
+  --vp-c-text-3: #666666;
 
-  /* 選択範囲の色 */
-  --vp-c-brand-soft: rgba(245, 225, 5, 0.2);
+  /* --- 山吹色アクセントの設定 --- */
+  --vp-c-brand-1: #d4a017; 
+  --vp-c-brand-2: #b8860b; 
+  --vp-c-brand-3: #a37807; 
+  --vp-c-brand-soft: rgba(212, 160, 23, 0.2);
 
-  /* 文字色は絶対「黒」！ */
+  /* ボタン内文字の固定 */
   --vp-button-brand-text: #000000;
   --vp-button-brand-hover-text: #000000;
   --vp-button-brand-active-text: #000000;
 }
 
 .dark {
-  /* ダークモードでは黄色が膨張して見えるので、
-     ほんの少しだけ暗めの色をメインに据えるのもアリ */
-  --vp-c-brand-1: #F5E105;
+  /* --- ダークモード：テキスト色をパキッとさせる --- */
+  --vp-c-text-1: #ffffff; 
+  --vp-c-text-2: #e0e0e0;
+  --vp-c-text-3: #bbbbbb;
+
+  /* 背景を引き締まった黒に */
+  --vp-c-bg: #111111;
+  --vp-c-bg-alt: #161618;
+
+  /* 山吹色の調整 */
+  --vp-c-brand-1: #ffb11b; 
+  --vp-button-brand-border: #ffb11b;
+
+  /* ダークモードでもボタン内文字は黒 */
+  --vp-button-brand-text: #000000;
+  --vp-button-brand-hover-text: #000000;
+}
+
+/* --- 追加：ソーシャルリンク（GitHub/Discordアイコン）のホバー --- */
+.VPNavBarSocialLinks .VPSocialLink:hover {
+  /* マウスを乗せた時に山吹色にする */
+  color: var(--vp-c-brand-1) !important;
+  /* 動きを少し滑らかに */
+  transition: color 0.2s ease;
+}
+
+/* ついでにナビのテキストメニューもホバーで山吹色に */
+.VPNavBarMenuLink:hover {
+  color: var(--vp-c-brand-1) !important;
 }
