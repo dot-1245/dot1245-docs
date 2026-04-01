@@ -5,7 +5,7 @@ const vitePressOptions = {
   title: "dot1245's document",
   description: "document about me and my stuff or services.",
   head: [
-      ['link', { rel: 'icon', href: '/public/ICON.png' }] // ここは触ってません！(｀･ω･´)ゞ
+      ['link', { rel: 'icon', href: '/public/ICON.png' }] // Do Not Change
     ],
   themeConfig: {
     logo: '/ICON.png',
@@ -22,8 +22,8 @@ const vitePressOptions = {
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/dot-1245/dot1245-docs' }, // 正しいURLに修正
-      { icon: 'discord', link: 'https://discord.gg/cnrV7NzepD' }
+      { icon: 'github', link: 'https://github.com/dot-1245/dot1245-docs' },
+      { icon: 'discord', link: 'https://discord.gg/Jr5897ruGs' }
     ]
   }
 }
