@@ -21,21 +21,13 @@ dot1245です。学生です。
 [ホームページ](https://dot1245.net/)
 メールアドレス dot1245@proton.me
 
-## Fourth: このドキュメントについて
-このドキュメントはVitepressを使用しています。
+## Fourth: このサービスについて
+このサーバーは[GNU/Linux Debian](https://www.debian.org/)及び[Arch Linux](https://archlinux.org/)を使用しています
 
-Vitepress https://vitepress.dev/
+このドキュメントは[Vitepress](https://vitepress.dev/)を使用しています。
 
-バックエンドにCloudflare Pagesを使用しています。
+バックエンドに[Cloudflare Pages](https://www.cloudflare.com/)を使用しています。
 
-Cloudflare https://www.cloudflare.com/
+バージョン管理に[Github](https://github.com/)を使用しています。
 
-バージョン管理にGithubを使用しています。
-
-Github https://github.com/
-
-その他開発にClaudeとGoogle Geminiを使用しています
-
-Claude https://claude.ai/
-
-Gemini https://gemini.google.com/
+その他開発に[Claude](https://claude.ai/)と[Google Gemini](https://gemini.google.com)を使用しています
