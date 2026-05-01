@@ -1,15 +1,44 @@
-name: Discord Notification
+name: Discord Notification System
 
 on:
   push:
-    branches: [ "main" ] # mainにpushされたら動く
+    branches: [ "main" ] # mainブランチにプッシュされたら実行
+    paths:
+      - 'Discord/**'     # Discordディレクトリ内の変更時のみ通知
+      - 'Minecraft/**'   # Minecraftディレクトリの変更も対象
+      - 'index.md'       # トップページの変更も対象
 
 jobs:
   notify:
-    runs-on: ubuntu-latest # GitHubが貸してくれるLinuxマシン
+    runs-on: ubuntu-latest
     steps:
-      - name: Discord Webhook Action
+      # 1. リポジトリの情報を読み込む
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. DiscordへWebhookを送信
+      - name: Send Discord Webhook
         uses: tsickert/discord-webhook@v7.0.0
         with:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          content: "🚀 **[dot.inc] Rule is updated!**\nコミット: `${{ github.event.head_commit.message }}`"
+          username: "dot.inc System"
+          # 直リンク形式のURLに変更
+          avatar-url: "https://raw.githubusercontent.com/dot-1245/dot1245-docs/main/public/ICON.png"
+          
+          # 通知のメイン設定
+          embed-title: "📜 Docs is updated!"
+          embed-url: "${{ github.event.compare }}" 
+          embed-color: 16753920 # 山吹色 (Hex: FFBF00)
+          
+          # 内容の詳細（変数のスペースを修正）
+          embed-description: |
+            **📄 Update Info:**
+            ${{ github.event.head_commit.message }}
+            
+            **🔗 Links:**
+            [Check DIFF](${{ github.event.compare }})
+            [Docs](https://docs.dot1245.net/)
+            
+          # フッターとタイムスタンプ
+          embed-footer-text: "System managed by dot1245 | SHA: ${{ github.sha }}"
+          embed-timestamp: ${{ github.event.head_commit.timestamp }}
