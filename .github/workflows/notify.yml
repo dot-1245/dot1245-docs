@@ -1,0 +1,15 @@
+name: Discord Notification
+
+on:
+  push:
+    branches: [ "main" ] # mainにpushされたら動く
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest # GitHubが貸してくれるLinuxマシン
+    steps:
+      - name: Discord Webhook Action
+        uses: tsickert/discord-webhook@v7.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          content: "🚀 **[dot.inc] Rule is updated!**\nコミット: `${{ github.event.head_commit.message }}`"
