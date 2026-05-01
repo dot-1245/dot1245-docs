@@ -31,4 +31,4 @@ dot1245です。学生です。
 
 バージョン管理に[Github](https://github.com/)を使用しています。
 
-その他開発に[Claude](https://claude.ai/)と[Google Gemini](https://gemini.google.com)を使用しています
+その他開発に[Google Gemini](https://gemini.google.com)を使用しています
