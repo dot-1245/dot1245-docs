@@ -32,7 +32,7 @@ export default defineConfig(withSidebar(vitePressOptions, {
   documentRootPath: '/', 
 
 
-  excludeFiles: ['Readme.md'], 
+  excludeFiles: ['README.md'], 
 
 
   useDirectoriesAsObjectKeys: true,
