@@ -18,7 +18,7 @@ const vitePressOptions = {
 
     editLink: {
       pattern: 'https://github.com/dot-1245/dot1245-docs/edit/main/:path',
-      text: '✒️Edit this page on GitHub'
+      text: 'Edit this page on GitHub'
     },
 
     socialLinks: [
@@ -29,7 +29,7 @@ const vitePressOptions = {
 }
 
 export default defineConfig(withSidebar(vitePressOptions, {
-  documentRootPath: '/',
+  documentRootPath: '/*',
   collapsed: false,
   useTitleFromFileHeading: true,
 }))
