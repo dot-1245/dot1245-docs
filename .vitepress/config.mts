@@ -5,7 +5,7 @@ const vitePressOptions = {
   title: "dot1245's document",
   description: "document about me and my stuff or services.",
   head: [
-    ['link', { rel: 'icon', href: '/ICON.png' }] // Do Not Change
+    ['link', { rel: 'icon', href: '/ICON.png' }]
   ],
   themeConfig: {
     logo: '/ICON.png',
