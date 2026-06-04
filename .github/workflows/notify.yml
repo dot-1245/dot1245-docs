@@ -30,7 +30,7 @@ jobs:
         with:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "dot.inc System"
-          avatar-url: "https://raw.githubusercontent.com/dot-1245/dot1245-docs/main/public/ICON.png"
+          avatar-url: "https://raw.githubusercontent.com/dot-inc-com/dot1245-docs/main/public/ICON.png"
           
           # タイトルに変更されたファイル名を入れる
           embed-title: "📜 ${{ steps.files.outputs.list }} is updated!"
